@@ -1,5 +1,4 @@
 package edu.buffalo.cse.cse486586.simpledht;
-
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.database.Cursor;
