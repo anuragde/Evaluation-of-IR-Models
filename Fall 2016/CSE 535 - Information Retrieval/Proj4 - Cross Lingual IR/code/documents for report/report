@@ -1,0 +1,10 @@
+Clir
+
+Major issue being translating doc or the query or both or using bilingual
+Why using dismax aprser
+To cater phrasequeries on languages :
+For instance, we found out that boosting the native language relevant documents gives better result
+sine transliteration of documents are not full proof
+
+EDISMAX query parser provides parameters pf, pf2 and pf3 to boost the document based on certain criteria.
+We utilize this feature to provide extra boost to documents in favour of native language
