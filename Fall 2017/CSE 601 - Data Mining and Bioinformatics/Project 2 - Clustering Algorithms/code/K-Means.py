@@ -61,7 +61,19 @@ iters = 0
 old = None
 cnt = np.array(cnt)
 
-while iters < MAX_ITERATIONS and np.all(old == cnt):
+-
+# Rand Coefficient
+
+m11 = 0
+m01 = 0
+m10 = 0
+m00 = 0
+for i in range(0, len(garr)):
+    for j in range(0, len(garr)):
+        if garr[i,j] == 1 and carr[i,j] == 1:
+            m11 += 1
+        elif garr[i,j] == 0 and carr[i,j] == 1:
+            m01 += 1while iters < MAX_ITERATIONS and np.all(old == cnt):
     
     old = cnt
     iters+=1
@@ -108,18 +120,6 @@ jcq = m11 / (m11 + m01 + m10)
 print("Jaccard Coefficient:")
 print(jcq)
 
-# Rand Coefficient
-
-m11 = 0
-m01 = 0
-m10 = 0
-m00 = 0
-for i in range(0, len(garr)):
-    for j in range(0, len(garr)):
-        if garr[i,j] == 1 and carr[i,j] == 1:
-            m11 += 1
-        elif garr[i,j] == 0 and carr[i,j] == 1:
-            m01 += 1
         elif garr[i,j] == 1 and carr[i,j] == 0:
             m10 += 1
         else:
