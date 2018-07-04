@@ -19,7 +19,7 @@ import twitter4j.JSONException;
 import twitter4j.JSONObject;
 public class Search {
 	static String AzureUname="viveksin";
-	static String AzureKey = "9el+H9jfBaMBQmCeziyHw7zJcxH7v6rYMCENP8wA3k0=";
+	static String AzureKey = "";
 	
   public static void main(String[] args) throws Exception{
 	  	String query="I want to eat food";
