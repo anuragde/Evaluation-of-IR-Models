@@ -35,7 +35,7 @@ public class ModifiedQueryParser extends ExtendedDismaxQParserPlugin  {
 	
 		static String ModifiedQuery = null;
 /*		static String AzureUname="viveksin";
-		static String AzureKey = "9el+H9jfBaMBQmCeziyHw7zJcxH7v6rYMCENP8wA3k0=";*/
+		static String AzureKey = "";*/
 		
 		
 		
@@ -62,7 +62,7 @@ public class ModifiedQueryParser extends ExtendedDismaxQParserPlugin  {
 		public QParser createParser(String qstr,SolrParams localParams,SolrParams params,SolrQueryRequest req){
 		  	
 		    String AzureUname="viveksin";
-			String AzureKey = "9el+H9jfBaMBQmCeziyHw7zJcxH7v6rYMCENP8wA3k0=";
+			String AzureKey = "";
 		  	Translate.setClientId(AzureUname);
 			Translate.setClientSecret(AzureKey);
 			ModifiedQuery=qstr; 
